@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x2725637c8E14211933dC5cAde8336c94d4CF0223",
+  "SCAN_LINK": "https://etherescan.io/address/0x2b8a60bc3c639567a7Ff95c6FF92B320A861Ce81",
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "UX",
+  "SYMBOL": "UX",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 50000000000000000,
+  "DISPLAY_COST": 0.2,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/doodle-prime-apes",
+  "SHOW_BACKGROUND": true
+}
