@@ -140,29 +140,31 @@ function App() {
         `Sorry, Presale Minting is not started.`
       );
       setClaimingNft(false);
-    } else if (presaleStartDate <= now && now < publicStartDate) {      
-      blockchain.smartContract.methods
-      .preSaleMint(mintAmount)
-      .send({
-        gasLimit: String(totalGasLimit),
-        to: CONFIG.CONTRACT_ADDRESS,
-        from: blockchain.account,
-        value: totalCostWei,
-      })
-      .once("error", (err) => {
-        console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
-        setClaimingNft(false);
-      })
-      .then((receipt) => {
-        console.log(receipt);
-        setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours!`
-        );
-        setClaimingNft(false);
-        dispatch(fetchData(blockchain.account));
-      });
-    } else {
+    }
+    // } else if (presaleStartDate <= now && now < publicStartDate) {      
+    //   blockchain.smartContract.methods
+    //   .preSaleMint(mintAmount)
+    //   .send({
+    //     gasLimit: String(totalGasLimit),
+    //     to: CONFIG.CONTRACT_ADDRESS,
+    //     from: blockchain.account,
+    //     value: totalCostWei,
+    //   })
+    //   .once("error", (err) => {
+    //     console.log(err);
+    //     setFeedback("Sorry, something went wrong please try again later.");
+    //     setClaimingNft(false);
+    //   })
+    //   .then((receipt) => {
+    //     console.log(receipt);
+    //     setFeedback(
+    //       `WOW, the ${CONFIG.NFT_NAME} is yours!`
+    //     );
+    //     setClaimingNft(false);
+    //     dispatch(fetchData(blockchain.account));
+    //   });
+    // } 
+    else {
       blockchain.smartContract.methods
         .mint(mintAmount)
         .send({
@@ -267,7 +269,7 @@ function App() {
                 boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
               }}
             >
-              <s.TextTitle
+              {/* <s.TextTitle
                 style={{
                   textAlign: "center",
                   fontSize: 50,
@@ -276,7 +278,7 @@ function App() {
                 }}
               >
                 {data.totalSupply} / {CONFIG.MAX_SUPPLY}
-              </s.TextTitle>
+              </s.TextTitle> */}
               <s.TextDescription
                 style={{
                   textAlign: "center",

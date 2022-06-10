@@ -27,12 +27,12 @@ export const fetchData = () => {
     try {       
       let info = await store
         .getState()
-        .blockchain.smartContract.methods.info()
+        .blockchain.smartContract.methods.getPrice()
         .call();
-      let totalSupply = info[2];
-      let price = info[0];
-      let minterCnt = info[4];
-      
+      let totalSupply = 1000;
+      let price = info;
+      let minterCnt = 10;
+
       dispatch(
         fetchDataSuccess({
           totalSupply,

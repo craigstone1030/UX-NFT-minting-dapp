@@ -1,13 +1,13 @@
 {
-  "CONTRACT_ADDRESS": "0x2725637c8E14211933dC5cAde8336c94d4CF0223",
-  "SCAN_LINK": "https://etherescan.io/address/0x2b8a60bc3c639567a7Ff95c6FF92B320A861Ce81",
+  "CONTRACT_ADDRESS": "0x296f0cd20d55368f53e816f7735fdd730f6d6331",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x296f0cd20d55368f53e816f7735fdd730f6d6331",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
     "ID": 4
   },
-  "NFT_NAME": "UX",
-  "SYMBOL": "UX",
+  "NFT_NAME": "SYM",
+  "SYMBOL": "SYM",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 50000000000000000,
   "DISPLAY_COST": 0.2,
